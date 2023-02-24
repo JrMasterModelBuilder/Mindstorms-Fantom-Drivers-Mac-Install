@@ -1,6 +1,8 @@
 # LEGO Mindstorms Fantom Drivers Mac Install Script
 
-A script to install the LEGO Mindstorms Fantom drivers on modern macOS versions.
+A script to install the LEGO Mindstorms Fantom drivers on semi-modern macOS versions (through macOS 10.14 Mojave).
+
+Since macOS 10.15 Catalina dropped support for 32-bit, installing on newer versions of macOS is pointless.
 
 
 ## Overview
@@ -40,6 +42,6 @@ sudo ./legodriverinstaller.sh 'MAC legodriver.pkg'
 
 ## License
 
-This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/.
+Copyright (c) 2017 JrMasterModelBuilder
 
-See [LICENSE.txt](LICENSE.txt)
+Licensed under the Mozilla Public License, v. 2.0.
