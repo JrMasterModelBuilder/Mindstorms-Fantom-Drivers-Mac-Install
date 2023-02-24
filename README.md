@@ -10,7 +10,7 @@ Since macOS 10.15 Catalina dropped support for 32-bit, installing on newer versi
 The trouble with the native installer package, is that the installer tries to install a legacy codeless kernel extension named `Fantom.kext`. There are several problems with this.
 
 - `Fantom.kext` depends on the legacy 32-bit `com.apple.kernel.iokit` which has not shipped with macOS for some time.
-- `Fantom.kext` has no code signature, so it cannot be loaded on 10.10+ without disabling security feature.
+- `Fantom.kext` has no code signature, so it cannot be loaded on 10.10+ without disabling security features.
 - The installer attempts to install to `/System/Library/Extensions/Fantom.kext`, which is a directory protected by System Integrity Protection, or SIP, so it fails to even install on 10.11+ without SIP being disabled.
 - It also installs an unnecessary `StartupItems` to try to load the kernel extension, which is useless since it cannot be loaded anyway.
 
